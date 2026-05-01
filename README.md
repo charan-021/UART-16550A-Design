@@ -32,7 +32,7 @@ This project implements a **UART 16550A controller** with an **AMBA APB (Advance
 ---
 
 ## Architecture
-
+```
 ┌──────────────────────────────────────────────────────┐
 │                   APB Bus Interface                  │
 │          (PSEL, PENABLE, PWRITE, PWDATA, PRDATA)     │
@@ -57,7 +57,7 @@ This project implements a **UART 16550A controller** with an **AMBA APB (Advance
             └─────►│  Baud │◄──────┘
                    │  Gen  │
                    └───────┘
-
+```
 ---
 
 ## Register Map (16550A Compatible)
@@ -105,7 +105,5 @@ The fastest way to see this design in action:
 **[▶ Open on EDA Playground](https://edaplayground.com/x/V3fg)** — click **Run** to simulate and view the waveforms directly in your browser.
 
 ---
-
-*Designed and verified in Verilog HDL. Simulations available on [EDA Playground](https://edaplayground.com/x/V3fg).*
 
 *To view the schematics and block diagrams for this project, visit the **Projects** section on my [LinkedIn Profile](https://www.linkedin.com/in/charan021/).*
