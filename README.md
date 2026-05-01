@@ -30,7 +30,7 @@ This project implements a **UART 16550A controller** with an **AMBA APB (Advance
 - **Gate-Level Netlist** — Design validated post-synthesis
 
 ---
-
+<!--
 ## Architecture
 
 <img width="1440" height="1040" alt="image" src="https://github.com/user-attachments/assets/981f28a7-db4a-44cd-940b-95a4248f56a1" />
@@ -49,7 +49,7 @@ This project implements a **UART 16550A controller** with an **AMBA APB (Advance
 | 0x14 | LSR | Line Status (TX empty, RX data ready, errors) |
 
 ---
-
+-->
 ## Verification
 
 Functional verification was performed using Verilog testbenches covering:
