@@ -72,7 +72,6 @@ This project implements a **UART 16550A controller** with an **AMBA APB (Advance
 | 0x0C | LCR | Line Control (data bits, parity, stop bits) |
 | 0x10 | MCR | Modem Control |
 | 0x14 | LSR | Line Status (TX empty, RX data ready, errors) |
-| 0x18 | MSR | Modem Status |
 
 ---
 
@@ -112,3 +111,5 @@ The fastest way to see this design in action:
 ---
 
 *Designed and verified in Verilog HDL. Simulations available on [EDA Playground](https://edaplayground.com/x/V3fg).*
+
+*📐 To view the schematics and block diagrams for this project, visit the **Projects** section on my [LinkedIn Profile](https://www.linkedin.com/in/charan021/).*
