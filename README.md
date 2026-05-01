@@ -1,24 +1,24 @@
-# 🔌 UART 16550A Controller with AMBA APB Interface
+# UART 16550A Controller with AMBA APB Interface
 
 > A fully functional RTL implementation of the industry-standard 16550A UART on a 32-bit APB bus, designed in Verilog HDL with complete functional verification.
 
 ---
 
-## 📡 Live Simulation & Waveforms
+## Live Simulation & Waveforms
 
-**👉 [View Simulation & Waveforms on EDA Playground](https://edaplayground.com/x/V3fg)**
+** [View Simulation & Waveforms on EDA Playground](https://edaplayground.com/x/V3fg)**
 
 Open the link above to run the testbench live in your browser and inspect the simulation waveforms — no tools installation required.
 
 ---
 
-## 📖 Overview
+## Overview
 
 This project implements a **UART 16550A controller** with an **AMBA APB (Advanced Peripheral Bus) interface**, enabling efficient and reliable serial communication. The design follows industry-standard 16550A UART specifications and is structured for synthesis and simulation using **Xilinx ISE** and **Intel Quartus Prime**.
 
 ---
 
-## ✨ Features
+## Features
 
 - **AMBA APB Interface** — Standard 32-bit peripheral bus integration
 - **Configurable Baud Rate Generator** — Divisor latch for flexible baud rate selection
@@ -31,7 +31,7 @@ This project implements a **UART 16550A controller** with an **AMBA APB (Advance
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌──────────────────────────────────────────────────────┐
@@ -62,7 +62,7 @@ This project implements a **UART 16550A controller** with an **AMBA APB (Advance
 
 ---
 
-## 🔧 Register Map (16550A Compatible)
+## Register Map (16550A Compatible)
 
 | Offset | Register | Description |
 |--------|----------|-------------|
@@ -75,7 +75,7 @@ This project implements a **UART 16550A controller** with an **AMBA APB (Advance
 
 ---
 
-## 🧪 Verification
+## Verification
 
 Functional verification was performed using Verilog testbenches covering:
 
@@ -90,7 +90,7 @@ Functional verification was performed using Verilog testbenches covering:
 
 ---
 
-## 🛠️ Tools Used
+## Tools Used
 
 | Tool | Purpose |
 |------|---------|
@@ -99,8 +99,6 @@ Functional verification was performed using Verilog testbenches covering:
 | EDA Playground | Cloud-based simulation and waveform viewing |
 
 ---
-
-## 🚀 Getting Started
 
 ### Run in Browser (Recommended)
 
@@ -112,4 +110,4 @@ The fastest way to see this design in action:
 
 *Designed and verified in Verilog HDL. Simulations available on [EDA Playground](https://edaplayground.com/x/V3fg).*
 
-*📐 To view the schematics and block diagrams for this project, visit the **Projects** section on my [LinkedIn Profile](https://www.linkedin.com/in/charan021/).*
+*To view the schematics and block diagrams for this project, visit the **Projects** section on my [LinkedIn Profile](https://www.linkedin.com/in/charan021/).*
