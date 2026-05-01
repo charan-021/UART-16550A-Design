@@ -33,7 +33,6 @@ This project implements a **UART 16550A controller** with an **AMBA APB (Advance
 
 ## Architecture
 
-```
 ┌──────────────────────────────────────────────────────┐
 │                   APB Bus Interface                  │
 │          (PSEL, PENABLE, PWRITE, PWDATA, PRDATA)     │
@@ -58,7 +57,6 @@ This project implements a **UART 16550A controller** with an **AMBA APB (Advance
             └─────►│  Baud │◄──────┘
                    │  Gen  │
                    └───────┘
-```
 
 ---
 
