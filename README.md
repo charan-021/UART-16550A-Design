@@ -32,32 +32,9 @@ This project implements a **UART 16550A controller** with an **AMBA APB (Advance
 ---
 
 ## Architecture
-```
-┌──────────────────────────────────────────────────────┐
-│                   APB Bus Interface                  │
-│          (PSEL, PENABLE, PWRITE, PWDATA, PRDATA)     │
-└───────────────────────┬──────────────────────────────┘
-                        │
-          ┌─────────────▼──────────────┐
-          │      Register File         │
-          │  (LCR, IER, FCR, MCR, ...) │
-          └──┬──────────────────────┬──┘
-             │                      │
-    ┌────────▼───────┐     ┌─────────▼──────┐
-    │  TX Path       │     │  RX Path       │
-    │  ┌──────────┐  │     │  ┌──────────┐  │
-    │  │ TX FIFO  │  │     │  │ RX FIFO  │  │
-    │  └────┬─────┘  │     │  └────▲─────┘  │
-    │  ┌────▼─────┐  │     │  ┌────┴─────┐  │
-    │  │TX Shift  │  │     │  │RX Shift  │  │
-    │  │ Register │  │     │  │ Register │  │
-    │  └────┬─────┘  │     │  └────▲─────┘  │
-    └───────│────────┘     └───────│────────┘
-            │      ┌───────┐       │
-            └─────►│  Baud │◄──────┘
-                   │  Gen  │
-                   └───────┘
-```
+
+<img width="1440" height="1040" alt="image" src="https://github.com/user-attachments/assets/981f28a7-db4a-44cd-940b-95a4248f56a1" />
+
 ---
 
 ## Register Map (16550A Compatible)
