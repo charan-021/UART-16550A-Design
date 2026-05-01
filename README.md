@@ -35,17 +35,17 @@ This project implements a **UART 16550A controller** with an **AMBA APB (Advance
 
 ```
 ┌──────────────────────────────────────────────────────┐
-│                   APB Bus Interface                   │
-│          (PSEL, PENABLE, PWRITE, PWDATA, PRDATA)      │
+│                   APB Bus Interface                  │
+│          (PSEL, PENABLE, PWRITE, PWDATA, PRDATA)     │
 └───────────────────────┬──────────────────────────────┘
                         │
           ┌─────────────▼──────────────┐
-          │      Register File          │
-          │  (LCR, IER, FCR, MCR, ...)  │
+          │      Register File         │
+          │  (LCR, IER, FCR, MCR, ...) │
           └──┬──────────────────────┬──┘
              │                      │
-    ┌────────▼──────┐     ┌─────────▼──────┐
-    │  TX Path       │     │  RX Path        │
+    ┌────────▼───────┐     ┌─────────▼──────┐
+    │  TX Path       │     │  RX Path       │
     │  ┌──────────┐  │     │  ┌──────────┐  │
     │  │ TX FIFO  │  │     │  │ RX FIFO  │  │
     │  └────┬─────┘  │     │  └────▲─────┘  │
